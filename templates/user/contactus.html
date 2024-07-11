@@ -1,0 +1,93 @@
+{% extends 'base.html'%} {% load static %} {% block content %}
+<style>
+  .form-control {
+    height: 45px;
+    margin-bottom: 1%;
+  }
+</style>
+<div class="text-center fs-2">
+  Contact
+  <b class="txt-mycolor"
+    >Us <i class="fa-regular fa-address-card fa-fade"></i
+  ></b>
+</div>
+<div class="row">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-6">
+        <form method="post">
+          {% csrf_token %} Name
+          <input
+            type="text"
+            name="name"
+            placeholder="Name.."
+            class="form-control"
+          />
+          Email
+          <input
+            type="email"
+            name="email"
+            placeholder="Email.."
+            class="form-control"
+          />
+          Mobile
+          <input
+            type="number"
+            name="mobile"
+            placeholder="Mobile.."
+            class="form-control"
+          />
+          Message
+          <textarea
+            style="min-height: 80px; resize: none"
+            name="message"
+            class="form-control"
+          ></textarea>
+          <input type="submit" value="Save" class="btn bg-mycolor" />
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <div class="address">
+          <h2><i class="fa-regular fa-envelope fa-shake"> Mail Us: </i></h2>
+
+          Shooper's Delight Internet Private Limited,
+          <br />
+          Buildings Alyssa, Begonia &
+          <br />
+          Clove Embassy Tech Village,
+          <br />
+          Outer Ring Road, Devarabeesanahalli Village,
+          <br />
+          Bengaluru, 560103,
+          <br />
+          Karnataka, India
+          <br />
+          <br />
+          <h2>
+            <i class="fa-regular fa-building fa-beat-fade">
+              Registered Office Address:
+            </i>
+          </h2>
+
+          Shooper's Delight Internet Private Limited,
+          <br />
+          Buildings Alyssa, Begonia &
+          <br />
+          Clove Embassy Tech Village,
+          <br />
+          Outer Ring Road, Devarabeesanahalli Village,
+          <br />
+          Bengaluru, 560103,
+          <br />
+          Karnataka, India
+          <br />
+          CIN : U51109KA2012PTC066107
+          <br />
+          Telephone: 044-45614700
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

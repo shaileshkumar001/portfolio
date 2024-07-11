@@ -1,0 +1,135 @@
+{%  extends 'base.html'%}
+{% load static %}
+{% block content %}
+<style>
+    #a
+    {
+        display: none;
+    }
+</style>
+<script>
+    function myfn()
+    {
+        document.getElementById('a').style.display="block";
+    }
+</script>
+<div class="text-center fs-2">
+    About <b class="txt-mycolor">Us <i class="fa-regular fa-address-card fa-beat-fade"></i></b>
+</div>
+<div class="container">
+    <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row g-0 about-bg rounded overflow-hidden bg-primary">
+                <div class="col-6 text-start">
+                    <img class="img-fluid w-100" src="{% static '/images/about-1.jpg'%}" style="height: 100%;" alt="">
+                </div>
+                <div class="col-6 text-start">
+                    <img class="img-fluid" src="{% static '/images/about-2.jpg'%}" style="width: 85%; margin-top:15%;" alt="">
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-fluid" src="{% static '/images/about-3.jpeg'%}" style="width:85%; height:; margin-bottom: 15%;" alt="" >
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-fluid w-100" src="{% static '/images/about-4.webp'%}" style="height: 100%; ">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <h1 class="mb-4">We Are A 10-min-zapto Focused On Delivering Best Organic Food And User Experiences.</h1>
+            <p class="mb-4">We provide you fresh and green begitables.</p>
+            <p><i class="fa fa-check  me-3"></i>Pure vegitarian food groccessories.</p>
+            <p><i class="fa fa-check  me-3"></i>Free shipping.</p>
+            <p><i class="fa fa-check  me-3"></i>100% Money Back Guarantee.</p>
+            <a href="#" class="btn btn-primary " onclick="myfn()" >Read More</a>
+        </div>
+    </div>
+</div>
+<div class="container-a" id="a">
+<div class="row  text-light mt-2 pt-5" style="background-color: #121212;">
+    <div class="col-sm-12  text-center ">
+        <h2>What We Provide?</h2>
+        <p>We are provide all feseleties.</p>
+    </div>
+</div>
+<div class="row  text-light" style="background-color: #121212;">
+    <div class="col-lg-10 mx-auto">
+        <div class="row">
+    <div class="col-sm-4"><i class="fa-solid fa-bag-shopping text-primary" style="font-size: 30px;"></i>
+        <div>
+            <h5 style="color:#e95f21;">Best Price & Offerce</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+    <div class="col-sm-4"><i class="fa-solid fa-globe text-primary" style="font-size: 30px;"></i>
+        <div>
+            <h5 style="color: #e95f21;">Wide Assortment</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+    <div class="col-sm-4"><i class="fa-solid fa-rotate-left text-primary" style="font-size: 30px;"></i>
+        <div>
+            <h5 style="color:#e95f21;">Easy Return</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="row text-light" style="background-color: #121212;">
+    <div class="col-lg-10 mx-auto pt-3">
+        <div class="row">
+    <div class="col-sm-4"><i class="fa-solid fa-truck text-primary" style="font-size: 30px;"></i>
+        <div>
+            <h5 style="color:#e95f21;">Free & Next Day Delivery</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+    <div class="col-sm-4"><i class="fa-solid fa-face-smile text-primary" style="font-size: 30px;"></i>
+        <div>
+            <h5 style="color:#e95f21;">100% seticifaction Gurantee.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+    <div class="col-sm-4"><i class="fa-solid fa-tag text-primary" style="font-size: 30px;"></i>
+        <div>
+            <h5 style="color:#e95f21;">Great Daly Deals & Discounts</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="row text-light  pt-5" style="background-color: #231f20;">
+    <div class="col-sm-12  text-center ">
+        <h2>Our Team</h2>
+        <p>Meet My Team Members They Are Very Hardworking</p>
+    </div>
+</div>
+<div class="row text-light"  style="background-color: #231f20;">
+    <div class="col-lg-10 mx-auto text-center">
+        <div class="row">
+    <div class="col-sm-4"><img src="{% static '/images/chirag.jpg'%}" style="height:110px; width:100px; border-radius: 100%;" alt="">
+        <div>
+            <h5 style="color:#e95f21;">Varma Shailesh Kumar</h5>
+            <h6 style="color:#27a745;">-CO Founder</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+    <div class="col-sm-4"><img src="{% static '/images/akash.jpg'%}" style="height:110px; width:100px; justify-content: center; border-radius: 100%;" alt="">
+        <div>
+            <h5 style="color: #e95f21;">Parth Kumar Patel</h5>
+            <h6 style="color:#27a745;">-CEO</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+    <div class="col-sm-4"><img src="{% static '/images/harshit.jpeg'%}" style="height:110px; width:100px; border-radius: 100%;" alt="">
+        <div>
+            <h5 style="color:#e95f21;">Harshit Sharma</h5>
+            <h6 style="color:#27a745;">-Director</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas ea labore similique laborum? </p>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
